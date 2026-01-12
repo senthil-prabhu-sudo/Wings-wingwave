@@ -1,7 +1,7 @@
 # WingWave Music Player
 
-[![Download APK](https://img.shields.io/badge/Download-APK-blue.svg)](https://github.com/yourusername/WingsMusicPlayer/releases/latest/download/app-release.apk)
-[![Version](https://img.shields.io/badge/Version-2.0-green.svg)](https://github.com/yourusername/WingsMusicPlayer/releases)
+[![Download APK](https://img.shields.io/badge/Download-APK-blue.svg)](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest/download/app-release.apk)
+[![Version](https://img.shields.io/badge/Version-2.0-green.svg)](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases)
 [![Min SDK](https://img.shields.io/badge/Min%20SDK-23-orange.svg)]()
 
 A sleek and powerful Android music player that brings your local music collection to life with modern design and advanced playback features.
