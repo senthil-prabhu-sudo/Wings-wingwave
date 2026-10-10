@@ -2,9 +2,8 @@
 
 <div align="center">
 
-![Flutter](https://img.shields.io/badge/Flutter-3.44+-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-3.12+-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Android](https://img.shields.io/badge/Android-API%2023+-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android%20(API%2023+)-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Build](https://img.shields.io/badge/Build-Universal%20APK-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 [![Latest Release](https://img.shields.io/github/v/release/senthil-prabhu-sudo/Wings-wingwave?style=for-the-badge&color=blue&label=Release)](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
@@ -12,7 +11,7 @@
 
 **A sleek, modern, and high-performance all-in-one Audio & Video Media Player for Android.**
 
-[**📥 Download Latest APK**](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest/download/WingsPlayer-universal.apk) • [**✨ Features**](#-features) • [**🚀 Getting Started**](#-getting-started) • [**🛠️ Tech Stack**](#-tech-stack)
+[**📥 Download Latest APK**](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest/download/WingsPlayer-universal.apk) • [**✨ Features**](#-features) • [**📥 Installation Guide**](#-installation-guide) • [**📱 System Requirements**](#-system-requirements)
 
 </div>
 
@@ -20,7 +19,7 @@
 
 ## 📖 Overview
 
-**WingsPlayer** (developed under the *Wings / WingWave* brand) is a feature-rich, high-fidelity media player designed to deliver an exceptional audio and video playback experience. Built with **Flutter** and powered by industry-standard playback engines (`just_audio` and `media_kit`), WingsPlayer seamlessly manages local audio/video libraries, provides advanced media editing utilities, features a privacy vault, and offers a clean, fluid Material Design interface.
+**WingsPlayer** (developed under the *Wings / WingWave* brand) is a feature-rich, high-fidelity media player designed to deliver an exceptional audio and video playback experience on Android devices. Powered by industry-standard playback engines (`just_audio` and `media_kit`), WingsPlayer seamlessly manages local audio/video libraries, provides advanced media editing utilities, features a private vault, and offers a clean, fluid Material Design interface.
 
 ---
 
@@ -36,7 +35,7 @@
 ### 🎬 Next-Gen Video Player
 - **Hardware-Accelerated Engine**: Ultra-smooth video rendering powered by `media_kit` (libmpv).
 - **Picture-in-Picture (PiP)**: Keep videos playing in a floating window while multitasking.
-- **Intuitive Gestures**: Swipe controls for vertical volume, brightness adjustment, and horizontal seek scrub.
+- **Intuitive Gestures**: Swipe controls for vertical volume, brightness adjustment, and horizontal seek scrubbing.
 - **Subtitles & Audio Tracks**: Easy subtitle selection and multi-audio track switching.
 - **Variable Playback Speed**: Finely tune playback speeds from **0.25x** up to **2.0x**.
 
@@ -61,78 +60,56 @@
 
 ## 📱 System Requirements
 
-| Specification | Requirement |
+| Specification | Details |
 | :--- | :--- |
 | **Operating System** | Android 6.0 (Marshmallow, API 23) or higher |
 | **Target SDK** | Android 15 ready (API 36) |
-| **Architectures** | Universal APK (`arm64-v8a`, `armeabi-v7a`, `x86_64`) |
-| **Permissions** | Audio & Video read permissions for local media scanning |
+| **Package Architecture** | Universal APK (`arm64-v8a`, `armeabi-v7a`, `x86_64`) |
+| **App Size** | ~96.9 MB (Self-contained media engines included) |
 
 ---
 
-## 📥 Installation
+## 📥 Installation Guide
 
-1. Go to the [**Releases Page**](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest).
-2. Download the latest **`WingsPlayer-universal.apk`**.
-3. On your Android device, allow installation from unknown sources if prompted.
-4. Open the downloaded file and install WingsPlayer.
+### Option 1: Direct APK Download (Recommended)
+1. Click the button below to download the latest universal release package:
+   <br/><br/>
+   <a href="https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest/download/WingsPlayer-universal.apk">
+     <img src="https://img.shields.io/badge/Download_APK-WingsPlayer-2ea44f?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+   </a>
+   <br/><br/>
+2. Once the download finishes, tap the downloaded APK notification or open it from your file manager.
+3. If prompted by Android, grant permission to **"Install Unknown Apps"** for your browser or file manager.
+4. Tap **Install** and enjoy WingsPlayer!
 
----
-
-## 🛠️ Tech Stack & Architecture
-
-- **Framework**: [Flutter](https://flutter.dev) (Dart 3.x)
-- **State Management**: [Provider](https://pub.dev/packages/provider)
-- **Media Engines**:
-  - [media_kit](https://pub.dev/packages/media_kit) (libmpv for high-performance video & audio decoding)
-  - [just_audio](https://pub.dev/packages/just_audio) & [just_audio_background](https://pub.dev/packages/just_audio_background)
-  - [video_player](https://pub.dev/packages/video_player)
-- **Storage & State**: `shared_preferences`, `path_provider`
-- **Device Integration**: `wakelock_plus`, `screen_brightness`, `permission_handler`, `share_plus`
+### Option 2: Browse GitHub Releases
+Visit the [**GitHub Releases Page**](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest) to inspect version notes, SHA-256 checksums, and previous releases.
 
 ---
 
-## 🚀 Getting Started (Build from Source)
+## 🔒 Permissions & Privacy
 
-### Prerequisites
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) (v3.44.0 or later)
-- Android SDK (API 36 recommended)
-- Java Development Kit (JDK 17 or later)
-
-### Build Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/senthil-prabhu-sudo/Wings-wingwave.git
-   cd Wings-wingwave
-   ```
-
-2. **Install Flutter dependencies:**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Run in Debug Mode:**
-   ```bash
-   flutter run
-   ```
-
-4. **Build Universal Release APK:**
-   ```bash
-   flutter build apk --release
-   ```
-   The generated APK will be located at `build/app/outputs/flutter-apk/app-release.apk`.
+WingsPlayer is designed with privacy and security in mind:
+- **Audio & Video Access**: Needed exclusively to scan and play your local music and video files.
+- **Foreground Service**: Needed to maintain audio playback when the app is in the background or device screen is locked.
+- **No Unnecessary Telemetry**: Your local media stays strictly on your device.
 
 ---
 
-## 🤝 Contributing
+## 🛠️ Technical Overview
 
-Contributions, feedback, and suggestions are welcome!
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/MyFeature`)
-3. Commit your changes (`git commit -m 'feat: Add MyFeature'`)
-4. Push to the branch (`git push origin feature/MyFeature`)
-5. Open a Pull Request
+- **Core Framework**: Flutter (Dart)
+- **Audio Engine**: `just_audio` with `just_audio_background` MediaSession integration
+- **Video Engine**: `media_kit` (high-performance libmpv hardware decoding)
+- **Design System**: Material Design 3
+
+---
+
+## 📞 Support & Feedback
+
+If you encounter any issues, have feature suggestions, or need assistance:
+- Submit an issue on the [**GitHub Issues Page**](https://github.com/senthil-prabhu-sudo/Wings-wingwave/issues).
+- Please include your device model and Android version when reporting a bug.
 
 ---
 
