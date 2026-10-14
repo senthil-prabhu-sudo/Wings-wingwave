@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪽 WingsPlayer
+# 🪽 WingWave
 
 [![Download APK](https://img.shields.io/badge/Download-APK-2ea44f?style=for-the-badge&logo=android&logoColor=white)](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest/download/WingsPlayer-universal.apk)
 [![Latest Release](https://img.shields.io/github/v/release/senthil-prabhu-sudo/Wings-wingwave?style=for-the-badge&color=blue&label=Release)](https://github.com/senthil-prabhu-sudo/Wings-wingwave/releases/latest)
